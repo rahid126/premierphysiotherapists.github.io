@@ -2,191 +2,67 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premier Physiotherapists | Home Physiotherapy & Rehabilitation</title>
-<meta name="description" content="Premier Physiotherapists provides professional home-visit physiotherapy and rehabilitation services.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Premier Physiotherapists | Home-Visit Physiotherapy</title>
+<meta name="description" content="Premier Physiotherapists provides professional home-visit physiotherapy and rehabilitation.">
 <style>
-:root{
-  --ink:#102f46;--teal:#167d78;--teal2:#e8f6f4;--cream:#f7faf9;
-  --muted:#637786;--line:#dfe9e9;--white:#fff;--shadow:0 18px 50px rgba(16,47,70,.10)
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
-a{text-decoration:none}
-.container{width:min(1120px,90%);margin:auto}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.7px;font-size:15px}
-.logo-mark{width:38px;height:38px;border-radius:12px;background:var(--ink);color:white;display:grid;place-items:center;font-size:20px}
-nav a{color:var(--ink);font-size:14px;font-weight:700;margin-left:25px}
-.nav-cta{padding:10px 17px;border-radius:24px;background:var(--teal);color:#fff!important}
-.hero{background:linear-gradient(120deg,#edf8f6 0%,#f8fbff 100%);padding:88px 0 82px}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:center}
-.kicker{display:inline-flex;align-items:center;gap:8px;color:var(--teal);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
-.kicker:before{content:"";width:26px;height:2px;background:var(--teal)}
-h1{font-size:clamp(45px,6vw,72px);line-height:1.02;letter-spacing:-2px;margin:18px 0;color:var(--ink)}
-.hero-copy{font-size:19px;color:var(--muted);max-width:650px}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:30px;font-weight:800;font-size:14px}
-.btn-primary{background:var(--ink);color:#fff}
-.btn-teal{background:var(--teal);color:#fff}
-.btn-light{background:#fff;color:var(--ink);border:1px solid var(--line)}
-.hero-panel{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px;box-shadow:var(--shadow)}
-.home-icon{width:66px;height:66px;border-radius:20px;background:var(--teal2);display:grid;place-items:center;font-size:30px;margin-bottom:22px}
-.hero-panel h2{font-size:26px;margin-bottom:10px}
-.hero-panel p{color:var(--muted);font-size:15px}
-.badges{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
-.badge{background:#f2f7f7;border:1px solid #e0ebeb;border-radius:20px;padding:7px 11px;font-size:12px;font-weight:700}
-section{padding:82px 0}
-.section-intro{max-width:690px;margin-bottom:34px}
-.eyebrow{color:var(--teal);font-size:12px;font-weight:900;letter-spacing:1.7px;text-transform:uppercase}
-h2{font-size:38px;line-height:1.18;letter-spacing:-.7px;margin:9px 0 12px}
-.section-intro p,.about-text{color:var(--muted)}
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.service{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;transition:.2s}
-.service:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-.service-icon{font-size:25px;margin-bottom:15px}
-.service h3{font-size:17px;margin-bottom:7px}
-.service p{font-size:13.5px;color:var(--muted)}
-.about-wrap{background:#fff}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
-.checks{list-style:none;margin-top:22px}
-.checks li{margin:13px 0;font-weight:700}
-.checks li:before{content:"✓";color:var(--teal);margin-right:10px}
-.info-card{background:var(--ink);color:#fff;border-radius:28px;padding:35px}
-.info-card h3{font-size:25px;margin-bottom:12px}
-.info-card p{color:#d8e6ed}
-.info-row{padding:17px 0;border-top:1px solid rgba(255,255,255,.16);margin-top:17px}
-.info-label{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;color:#9fc1ca;font-weight:800}
-.info-value{font-size:18px;font-weight:800;margin-top:3px}
-.approach{background:var(--ink);color:#fff}
-.approach h2{color:#fff}
-.approach p{color:#d8e6ed;max-width:760px}
-.approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
-.approach-card{padding:25px;border:1px solid rgba(255,255,255,.13);border-radius:20px;background:rgba(255,255,255,.04)}
-.approach-card strong{display:block;margin-bottom:7px}
-.approach-card span{font-size:13px;color:#c5d8df}
-.cta{padding:70px 0}
-.cta-box{background:linear-gradient(135deg,#e4f5f2,#edf5fb);border:1px solid var(--line);border-radius:30px;padding:55px;text-align:center}
-.cta-box p{color:var(--muted);margin:10px auto;max-width:600px}
-footer{background:#fff;border-top:1px solid var(--line);padding:28px 0;text-align:center;color:#758792;font-size:13px}
-@media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.approach-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:620px){nav{display:none}.hero{padding:62px 0}.services,.approach-grid{grid-template-columns:1fr}h2{font-size:31px}.cta-box{padding:38px 22px}.hero-panel{padding:27px}}
+:root{--ink:#102f46;--teal:#167d78;--pale:#eef9f8;--muted:#607789;--line:#dce8e9}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;letter-spacing:.06em}
+.navlinks{display:flex;gap:22px;align-items:center;font-size:14px}.cta,.btn-primary{background:var(--ink);color:#fff}
+.cta{padding:10px 17px;border-radius:24px;font-weight:700}.hero{background:linear-gradient(135deg,#eaf8f7,#f7fbff);padding:90px 0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:.18em;font-size:13px;color:var(--teal);font-weight:800}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.03;margin:16px 0 20px}.lead{font-size:20px;color:var(--muted)}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:14px 22px;border-radius:30px;font-weight:800}
+.btn-secondary{border:1px solid var(--ink)}section{padding:78px 0}.section-title{font-size:38px;line-height:1.15;margin:10px 0 14px}
+.section-lead{color:var(--muted);max-width:720px}.hero-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:32px}
+.profile{background:var(--pale)}.profile-grid{display:grid;grid-template-columns:420px 1fr;gap:60px;align-items:center}
+.profile-photo{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;display:block}.name{font-size:42px;line-height:1.1;margin:10px 0}
+.role{font-size:19px;color:var(--teal);font-weight:800}.bio{margin:18px 0;color:var(--muted);font-size:17px}
+.tags{display:flex;flex-wrap:wrap;gap:10px}.tag{border:1px solid #cbdedc;background:#fff;padding:9px 13px;border-radius:20px;font-size:14px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.card{border:1px solid var(--line);border-radius:20px;padding:25px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:15px}
+.home{background:var(--ink);color:#fff}.home .section-lead{color:#d8e6ee}.contact{background:#f6fafb}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:28px}.contact-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px}.contact-card p{color:var(--muted);margin-top:7px}
+footer{background:#0b2639;color:#dce8ef;text-align:center;padding:28px;font-size:13px}
+@media(max-width:760px){.navlinks{display:none}.hero{padding:65px 0}.hero-grid,.profile-grid,.contact-box{grid-template-columns:1fr}.profile-photo{max-width:420px;margin:auto}.grid{grid-template-columns:1fr}h1{font-size:48px}.section-title{font-size:32px}.name{font-size:34px}}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="container nav">
-    <a class="logo" href="#">
-      <span class="logo-mark">✚</span>
-      <span>PREMIER PHYSIOTHERAPISTS</span>
-    </a>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#approach">Our Approach</a>
-      <a href="#contact" class="nav-cta">Book Home Visit</a>
-    </nav>
-  </div>
-</header>
-
+<header><div class="container nav"><div class="logo">PREMIER PHYSIOTHERAPISTS</div>
+<div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a><a class="cta" href="https://wa.me/916006803389">WhatsApp</a></div></div></header>
 <main>
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <div class="kicker">Home-Visit Physiotherapy</div>
-      <h1>Professional care.<br>Delivered to your home.</h1>
-      <p class="hero-copy">Premier Physiotherapists brings personalized physiotherapy and rehabilitation to you — with a modern, patient-focused approach built around movement, function and recovery.</p>
-      <div class="actions">
-        <a class="btn btn-teal" href="https://wa.me/916006803389">WhatsApp for Appointment</a>
-        <a class="btn btn-light" href="tel:+916006803389">Call 6006803389</a>
-      </div>
-    </div>
-    <div class="hero-panel">
-      <div class="home-icon">⌂</div>
-      <h2>Physiotherapy at Home</h2>
-      <p>No clinic visit required. We bring assessment, rehabilitation and therapeutic care to your home, making treatment more convenient and personal.</p>
-      <div class="badges">
-        <span class="badge">Home Visits</span><span class="badge">Personalized Care</span><span class="badge">Functional Rehab</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="container">
-    <div class="section-intro">
-      <div class="eyebrow">What we provide</div>
-      <h2>Physiotherapy & rehabilitation services</h2>
-      <p>Services are selected according to individual assessment, clinical needs and rehabilitation goals.</p>
-    </div>
-    <div class="services">
-      <article class="service"><div class="service-icon">🦵</div><h3>Musculoskeletal Rehab</h3><p>Exercise and rehabilitation for common joint, muscle, spine and movement problems.</p></article>
-      <article class="service"><div class="service-icon">🏃</div><h3>Sports Physiotherapy</h3><p>Rehabilitation and return-to-activity support for sports-related injuries and performance goals.</p></article>
-      <article class="service"><div class="service-icon">🤰</div><h3>Postpartum Rehabilitation</h3><p>Individualized rehabilitation and exercise support following childbirth.</p></article>
-      <article class="service"><div class="service-icon">🧠</div><h3>Neurological Rehabilitation</h3><p>Functional rehabilitation focused on movement, balance, coordination and independence.</p></article>
-      <article class="service"><div class="service-icon">🪡</div><h3>Dry Needling</h3><p>Used when clinically appropriate as an adjunct within a broader rehabilitation plan.</p></article>
-      <article class="service"><div class="service-icon">🩹</div><h3>Therapeutic Taping</h3><p>Taping techniques selected according to assessment and treatment goals.</p></article>
-      <article class="service"><div class="service-icon">◉</div><h3>Cupping</h3><p>May be incorporated as an adjunct when appropriate to the individual's care plan.</p></article>
-      <article class="service"><div class="service-icon">💪</div><h3>Exercise Therapy</h3><p>Progressive exercises for mobility, strength, control and functional recovery.</p></article>
-    </div>
-  </div>
-</section>
-
-<div class="about-wrap" id="about">
-<section>
-  <div class="container about-grid">
-    <div>
-      <div class="eyebrow">About us</div>
-      <h2>Care designed around the person, not just the condition.</h2>
-      <p class="about-text">Welcome to Premier Physiotherapists. We provide home-visit physiotherapy with an emphasis on individualized assessment, clear goals, therapeutic exercise and functional rehabilitation.</p>
-      <ul class="checks">
-        <li>Convenient home-based care</li>
-        <li>Individualized assessment and planning</li>
-        <li>Goal-oriented rehabilitation</li>
-        <li>Education and self-management support</li>
-      </ul>
-    </div>
-    <div class="info-card">
-      <h3>Meet the Head</h3>
-      <p>Premier Physiotherapists is currently led by the head of the service. Our wider staff and team profiles will be added as the service expands.</p>
-      <div class="info-row"><div class="info-label">Appointments</div><div class="info-value">Home Visits</div></div>
-      <div class="info-row"><div class="info-label">Phone / WhatsApp</div><div class="info-value">6006803389</div></div>
-    </div>
-  </div>
-</section>
-</div>
-
-<section class="approach" id="approach">
-  <div class="container">
-    <div class="eyebrow">Our philosophy</div>
-    <h2>A modern approach to rehabilitation</h2>
-    <p>We combine clinical assessment, therapeutic exercise, education and appropriate hands-on or adjunctive techniques to create a practical rehabilitation plan for each person.</p>
-    <div class="approach-grid">
-      <div class="approach-card"><strong>Assessment-led</strong><span>Treatment begins with understanding the person's symptoms, movement and functional goals.</span></div>
-      <div class="approach-card"><strong>Function-focused</strong><span>Rehabilitation is directed toward meaningful daily activities and participation.</span></div>
-      <div class="approach-card"><strong>Individualized</strong><span>Interventions are selected according to the person's needs rather than a one-size-fits-all routine.</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="cta" id="contact">
-  <div class="container">
-    <div class="cta-box">
-      <div class="eyebrow">Start your rehabilitation</div>
-      <h2>Book a home visit</h2>
-      <p>For appointments and enquiries, contact Premier Physiotherapists directly by phone or WhatsApp.</p>
-      <div class="actions" style="justify-content:center">
-        <a class="btn btn-teal" href="https://wa.me/916006803389">WhatsApp 6006803389</a>
-        <a class="btn btn-light" href="tel:+916006803389">Call Now</a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer>© 2026 Premier Physiotherapists · Home-Visit Physiotherapy & Rehabilitation</footer>
-</body>
-</html>
+<section class="hero"><div class="container hero-grid"><div>
+<div class="kicker">Home-Visit Physiotherapy & Rehabilitation</div>
+<h1>Professional care.<br>Delivered to your home.</h1>
+<p class="lead">Personalized physiotherapy and rehabilitation designed around your condition, goals and daily life.</p>
+<div class="buttons"><a class="btn btn-primary" href="https://wa.me/916006803389">Book a Home Visit</a><a class="btn btn-secondary" href="tel:+916006803389">Call 6006803389</a></div>
+</div><div class="hero-card"><strong>Premier Physiotherapists</strong><p>Supporting recovery, mobility and independence through individualized physiotherapy and rehabilitation.</p></div></div></section>
+<section id="about" class="profile"><div class="container profile-grid">
+<div><img class="profile-photo" src="assets/rahid-ahmad-mir.jpg" alt="Rahid Ahmad Mir, Physiotherapist"></div>
+<div><div class="kicker">Meet the Head</div><h2 class="name">RAHID AHMAD MIR</h2>
+<div class="role">BPT, Government Medical College Srinagar · Physiotherapist</div>
+<p class="bio">With 2 years of clinical experience, Rahid Ahmad Mir focuses on personalized home-based physiotherapy and rehabilitation, with experience in mobilization and manipulation and a particular focus on stroke rehabilitation.</p>
+<div class="tags"><span class="tag">Stroke Rehabilitation</span><span class="tag">Mobilization & Manipulation</span><span class="tag">Therapeutic Exercise</span><span class="tag">Home-Based Physiotherapy</span></div>
+</div></div></section>
+<section id="services"><div class="container"><div class="kicker">What we provide</div><h2 class="section-title">Physiotherapy services</h2><p class="section-lead">Home-based assessment, treatment and rehabilitation tailored to individual needs.</p>
+<div class="grid">
+<div class="card"><h3>Stroke Rehabilitation</h3><p>Individualized rehabilitation focused on mobility, function, balance and independence.</p></div>
+<div class="card"><h3>Musculoskeletal Rehab</h3><p>Assessment and rehabilitation for muscle, joint and movement-related problems.</p></div>
+<div class="card"><h3>Sports Physiotherapy</h3><p>Rehabilitation and return-to-activity support for sports and exercise-related injuries.</p></div>
+<div class="card"><h3>Postpartum Rehabilitation</h3><p>Individualized rehabilitation supporting safe recovery, strength and functional movement after childbirth.</p></div>
+<div class="card"><h3>Mobilization & Manipulation</h3><p>Hands-on techniques selected as appropriate following clinical assessment.</p></div>
+<div class="card"><h3>Exercise Therapy</h3><p>Progressive, goal-directed exercise programs designed around function and recovery.</p></div>
+<div class="card"><h3>Taping</h3><p>Therapeutic taping used as an adjunct to an individualized rehabilitation plan.</p></div>
+<div class="card"><h3>Dry Needling</h3><p>Dry needling may be used where clinically appropriate as part of a broader treatment plan.</p></div>
+<div class="card"><h3>Cupping</h3><p>Cupping may be offered as an adjunctive technique when appropriate.</p></div>
+</div></div></section>
+<section class="home"><div class="container"><div class="kicker" style="color:#8fe1dc">A modern home-visit model</div><h2 class="section-title">Care that comes to you.</h2><p class="section-lead">No need to travel to a clinic. We bring physiotherapy and rehabilitation to your home.</p></div></section>
+<section id="contact" class="contact"><div class="container"><div class="kicker">Appointments</div><h2 class="section-title">Book a home visit</h2><p class="section-lead">Call or message us on WhatsApp to arrange an appointment.</p>
+<div class="contact-box"><div class="contact-card"><strong>Phone / WhatsApp</strong><p>6006803389</p><div class="buttons"><a class="btn btn-primary" href="https://wa.me/916006803389">Message on WhatsApp</a><a class="btn btn-secondary" href="tel:+916006803389">Call Now</a></div></div>
+<div class="contact-card"><strong>Home-Visit Physiotherapy</strong><p>Convenient, individualized rehabilitation delivered at home.</p></div></div></div></section>
+</main><footer>© 2026 Premier Physiotherapists · Home-Visit Physiotherapy & Rehabilitation</footer>
+</body></html>
